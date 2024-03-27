@@ -265,9 +265,26 @@ header .contenedor .titular .botones a {
 
 .conciertoEventos {
   background: url(../Assets/images/background.jpg) no-repeat center;
+  background-size: 100%;
   padding: 20rem;
 }
 
+.conciertoEventos h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: -3px -3px 2px #000, 3px 3px 2px #000, -3px 3px 2px #000, 3px -3px 2px #000; 
+}
+
+iframe {
+  position:relative;
+  top: 50%;
+  left: 25%;
+}
+
+.eventosPrincipales {
+  background: url(../Assets/images/background2.jpg);
+  background-size: 100%;
+}
 /* FOOTER */
 
 
