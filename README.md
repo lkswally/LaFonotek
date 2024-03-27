@@ -6,7 +6,7 @@ Una Web dedicada a la musica y sus expresiones
 
 Desarrolladres:
 
-1. Ariel Denaro
-2. Silvina Aniotz
-3. Lucas Rojo
-4. Federico Sanchez
+1. Ariel Denaro => Contacto
+2. Silvina Aniotz => Index
+3. Lucas Rojo => Catálogo
+4. Federico Sanchez => Eventos

@@ -15,13 +15,8 @@ li {
   list-style: none;
 }
 
-/* header {
-  background-image: url(../Assets/images/fondo2.jpg);
-  background-repeat: no-repeat; } */
-
 header .contenedor {
-  background: url();
-  padding-bottom: 50px;
+  padding: 20px 0;
 }
 
 header .contenedor .menu {
@@ -29,28 +24,28 @@ header .contenedor .menu {
   justify-content: space-evenly;
 }
 
-header .contenedor .menu .logo_y_menu {
+header .contenedor .menu .logo {
   display: flex;
   align-items: center;
 }
 
-header .contenedor .menu .logo_y_menu img {
+header .contenedor .menu .logo img {
   border-radius: 50%;
 }
 
-header .contenedor .menu .logo_y_menu nav ul {
+header .contenedor .menu .logo nav ul {
   display: flex;
 }
 
-header .contenedor .menu .logo_y_menu nav ul li {
+header .contenedor .menu .logo nav ul li {
   margin: 0 20px;
 }
 
-header .contenedor .menu .logo_y_menu nav ul li a {
+header .contenedor .menu .logo nav ul li a {
   color: #a8a1a5;
 }
 
-header .contenedor .menu .logo_y_menu nav ul li :hover {
+header .contenedor .menu .logo nav ul li :hover {
   color: #e2d2b0;
 }
 
@@ -264,127 +259,18 @@ header .contenedor .titular .botones a {
 
 /* EVENTOS */
 
-.menu {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  height: 40vh;
-
-  
-  &--wrapper {
-    counter-reset: count;
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  &--item {
-    counter-increment: count;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 30vw;
-    height: 100%;
-    padding: 0 1.5vw;
-    overflow: hidden;
-    
-    @media (max-width: 767px) {
-      width: 40vw;
-      height: 40vw;
-    }
-    
-    &:nth-child(n+10):before {
-      content: counter(count);
-    }
-    
-    figure {
-      position: absolute;
-      z-index: 1;
-      display: block;
-      user-select: none;
-      padding: 0;
-      border: none;
-      outline: none;
-      box-shadow: none;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      pointer-events: none;
-      transform-origin: center;
-      
-      img {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        vertical-align: middle;
-        transform-origin: center;
-      }
-    
-      &:before {
-        position: absolute;
-        z-index: 2;
-        bottom: 1vw;
-        left: 1vw;
-        display: inline-block;
-        content: "0" counter(count);
-        color: #ffffff;
-        font-size: 3vw;
-      }
-    }
-  }
+.headerEventos {
+  background:#000;
 }
 
-.version {
-  display: inline-block;
-  position: fixed;
-  text-align: center;
-  z-index: 1;
-  text-decoration: none;
-  background: #333;
-  font-family: sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-  border-radius: 10px;
-  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2);
-  top: -30px;
-  right: -50px;
-  bottom: auto;
-  transform: rotate(45deg);
-  transform-origin: 0% 100%;
-  border-radius: 0;
-  padding: 8px 30px;
-  font-size: 11px;
-  
-  &:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-    right: 0%;
-    background: transparent;
-  }
-  
-  @media (max-width: 767px) {
-    transform: scale(.6) rotate(45deg) ;
-    right: -100px;
-  }
+.conciertoEventos {
+  background: url(../Assets/images/background.jpg) no-repeat center;
+  padding: 20rem;
 }
-
 
 /* FOOTER */
+
+
 
 footer {
   background-color: #e2d2b0;
