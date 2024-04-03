@@ -19,6 +19,7 @@
                         <ul>
                             <li><a href="../index.html">Inicio</a></li>
                             <li><a href="../Pages/catalogo.html">Catalogo</a></li>
+                            <li><a class="active" href="../Pages/eventos.html">Eventos</a></li>
                             <li><a href="../Pages/blog.html">Blog</a></li>
                             <li><a href="../Pages/contacto.html">Contacto</a></li>
                         </ul>
@@ -31,119 +32,164 @@
             </div>
         </div>       
     </header>
-    <main>
-        <div class="conciertoEventos">
-            <span class="press_play">
-                <a href="#lolla">
-                <img class="zoom" src="../Assets/images/boton.png" alt="boton de play">
-                </a>  
-                <img id="play" src="../Assets/images/Press-Play-BW-Text-Logo-01.png" alt="">  
-            </span>    
-        </div>
-        <div class="eventosPrincipales">
-            <div id="lolla">   
-                <img src="../Assets/images/lollapalooza.png" alt="logo lollapalooza">
-                <iframe width="700" height="420" src="https://www.youtube.com/embed/QUqofG7HcTY?si=DzakzrcQRBr4Ceok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div> 
-            <!-- CARRUSEL -->
-            
-            <!-- EVENTOS PRINCIPALES -->
+    <main>	
+        <section>
+            <div class="sect">
+                <video src="../Assets/images/Background2.mp4" muted="true" autoplay="true" loop="true"></video>
+                <div class="main">
+                    <h1 class="slide-in-elliptic-left-fwd">EVENTOS 2024</h1>
+                    <input type="search" method="post" class="buscar" placeholder="Que eventos estas buscando?">
+                </div> 
+                    <div class="foto_eventos">
+                        <img src="../Assets/images/guitarra3.png" alt="imagen de Slash">
+                    </div>   
+            </div>
+        </section>
 
-            <div id="mainevent">
-                <h2>1. Main Event</h2>
-                <img src="../Assets/images/david_guetta.jpg" alt="imagen de David Guetta">
-            </div>
-            <div class="headliners">
-                <h2>2. Headliner</h2>
-                <img src="../Assets/images/Luis_Miguel.jpg" alt="imagen de Luis Miguel">
-            </div>
-            <div class="headliners">
-                <h2>3. Headliner</h2>
-                <img src="../Assets/images/Maria_Becerra.jpg" alt="imagen de Maria Becerra">
-            </div>
-            <div class="headliners">
-                <h2>4. Headliner</h2>
-                <img src="../Assets/images/mana.jpg" alt="imagen de la banda Mana">
-            </div>
-            <div class="headliners">
-                <h2>5. Headliner</h2>
-                <img src="../Assets/images/lollapalooza2024.jpg" alt="imagen del festival lollapalooza">
-            </div>
+                    <!-- EVENTOS PRINCIPALES -->    
+        <section class="eventos">                       
+            <div class="EventosPrincipales">
+                <div id="Eventos"> 
+                    <div id="mainevent">
+                        <a href="https://www.entradafan.com.ar/" target="_blank">
+                            <div class="card">
+                                <img src="../Assets/images/david_guetta.jpg" alt="">
+                                <div class="mensaje">
+                                    <h2 class="titulo">1. Main Event</h2>
+                                    <p class="descripcion">David Guetta vuelve a los escenarios de Buenos Aires para dar un <b>único concierto en 2024</b>. Al igual que muchos otros músicos, el escenario para el concierto en Buenos Aires de David Guetta es el <b>Movistar Arena</b> y de momento, sólo hay una fecha: el <b>6 de enero de 2024</b>.</p>
+                                </div>
+                            </div>
+                        </a>   
+                    </div>
+                    <div class="headliner">
+                        <a href="https://www.entradafan.com.ar/" target="_blank">
+                            <div class="card">
+                                <img src="../Assets/images/Luis_Miguel.jpg" alt="">
+                                <div class="mensaje">
+                                    <h3 class="titulo">Entradas Mana</h3>
+                                    <p class="descripcion">13 de Abril - Movistar Arena</p>
+                                </div>
+                            </div>        
+                        </a>
+                    </div>
+                    <div class="headliner">
+                        <a href="https://www.entradafan.com.ar/" target="_blank">
+                            <div class="card">
+                                <img src="../Assets/images/Maria_Becerra.jpg" alt="">
+                                <div class="mensaje">
+                                    <h3 class="titulo">Entradas Maria Becerra</h3>
+                                    <p class="descripcion">23 de Marzo - Estadio River Plate</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="headliner">
+                        <a href="https://www.entradafan.com.ar/" target="_blank">
+                            <div class="card">
+                                <img src="../Assets/images/mana.jpg" alt="">
+                                <div class="mensaje">
+                                    <h3 class="titulo">Entradas Luis Miguel</h3>
+                                    <p class="descripcion">8 y 9 de Marzo - Campo Argentino de Polo</p>
+                                </div>
+                            </div>                       
+                        </a>
+                    </div>
+                    <div class="headliner">
+                        <a href="https://www.entradafan.com.ar/" target="_blank">
+                            <div class="card">
+                                <img src="../Assets/images/airbag.jpg" alt="">
+                                <div class="mensaje">
+                                    <h3 class="titulo">Entradas Airbag</h3>
+                                    <p class="descripcion">26 de Abril - Luna Park</p>
+                                </div>
+                            </div>                        
+                        </a>
+                    </div>
+                </div>  
+            </div>     
 
-            <!-- OTROS EVENTOS -->
+        <!-- OTROS EVENTOS -->
 
-            <div class="teatro">
-                <h3></h3>
-                <div class="obras">
-                    <h4>El jorobado de Paris</h4>
-                <img src="../Assets/images/jorobado.png" alt="cartel teatral de El jorobado de Paris">
+                <div id="lolla">
+                    <a href="https://www.lollapaloozaar.com/" target="_blank">   
+                        <img src="../Assets/images/lollapalooza.png" alt="logo lollapalooza">
+                    </a>
+                    <iframe width="1120" height="630" src="https://www.youtube.com/embed/e8EblzPcBnc?si=r52dRZwYSkRJbI1l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>            
+
+                <div class="teatro">
+                    <h3></h3>
+                    <div class="obras">
+                        <h4>El jorobado de Paris</h4>
+                    <img src="../Assets/images/jorobado.png" alt="cartel teatral de El jorobado de Paris">
+                    </div>
+                    <div class="obras">
+                        <h4>El hombre sin nombre</h4>
+                    <img src="../Assets/images/hombresinnombre.png" alt="cartel teatral de El hombre sin nombre">
+                    </div>
+                    <div class="obras">
+                        <h4>El funeral de los objetos</h4>
+                    <img src="../Assets/images/funeral.png" alt="cartel teatral de El funeral de los objetos">
+                    </div>
+                    <div class="obras">
+                        <h4>Dorian</h4>
+                    <img src="../Assets/images/Dorian.png" alt="cartel teatral de Dorian">
+                    </div>
+                    <div class="obras">
+                        <h4>Waterloo</h4>
+                    <img src="../Assets/images/waterloo.png" alt="cartel teatral de Waterloo">
+                    </div>
                 </div>
-                <div class="obras">
-                    <h4>El hombre sin nombre</h4>
-                <img src="../Assets/images/hombresinnombre.png" alt="cartel teatral de El hombre sin nombre">
+
+                <div class="recitales">
+                    <h3></h3>
+                    <div class="estadios">
+                        <h4>Jonas Brothers</h4>
+                    <img src="../Assets/images/jonas_brothers.jpg" alt="tapa disco de Jonas Brothers">
+                    </div>
+                    <div class="estadios">
+                        <h4>Karol G</h4>
+                        <img src="../Assets/images/karolG.jpg" alt="tapa disco de Karol G">
+                    </div>
+                    <div class="estadios">
+                        <h4>Tom Jones</h4>
+                    <img src="../Assets/images/tom_jones.jpg" alt="tapa disco de Tom Jones">
+                    </div>
+                    <div class="estadios">
+                        <h4>NTVG</h4>
+                    <img src="../Assets/images/NTVG.jpg" alt="tapa disco de No te va a gustar">
+                    </div>
+                    <div class="estadios">
+                        <h4>Megadeth</h4>
+                    <img src="../Assets/images/megadeth.jpg" alt="tapa disco de Megadeth">
+                    </div>
                 </div>
-                <div class="obras">
-                    <h4>El funeral de los objetos</h4>
-                <img src="../Assets/images/funeral.png" alt="cartel teatral de El funeral de los objetos">
-                </div>
-                <div class="obras">
-                    <h4>Dorian</h4>
-                <img src="../Assets/images/Dorian.png" alt="cartel teatral de Dorian">
-                </div>
-                <div class="obras">
-                    <h4>Waterloo</h4>
-                <img src="../Assets/images/waterloo.png" alt="cartel teatral de Waterloo">
+
+                <div class="bares">
+                    <h3></h3>
+                    <div class="indoor">
+                        <h4>Bar de Fondo</h4>
+                    <img src="../Assets/images/bardefondo.jpg" alt="imagen del Bar de Fondo">
+                    </div>
+                    <div class="indoor">
+                        <h4>Lucille</h4>
+                    <img src="../Assets/images/lucille.jpg" alt="imagen del bar Lucille">
+                    </div>
+                    <div class="indoor">
+                        <h4>Open Folk</h4>
+                    <img src="../Assets/images/openfolk.jpg" alt="Imagen del bar Open Folk">
+                    </div>
+                    <div class="indoor">
+                        <h4>The Roxy</h4>
+                    <img src="../Assets/images/theroxy.jpg" alt="imagen del bar The Roxy">
+                    </div>
+                    <div class="indoor">
+                        <h4>Virasoro</h4>
+                    <img src="../Assets/images/virasoro.jpg" alt="imagen del bar virasoro">
+                    </div>
                 </div>
             </div>
-
-            <div class="recitales">
-                <h3></h3>
-                <div class="estadios">
-                    <h4>Jonas Brothers</h4>
-                <img src="../Assets/images/jonas_brothers.jpg" alt="tapa disco de Jonas Brothers">
-                </div>
-                <div class="estadios">
-                    <h4>Karol G</h4>
-                    <img src="../Assets/images/karolG.jpg" alt="tapa disco de Karol G">
-                </div>
-                <div class="estadios">
-                    <h4>Tom Jones</h4>
-                <img src="../Assets/images/tom_jones.jpg" alt="tapa disco de Tom Jones">
-                </div>
-                <div class="estadios">
-                    <h4>NTVG</h4>
-                <img src="../Assets/images/NTVG.jpg" alt="tapa disco de No te va a gustar">
-                </div>
-                <div class="estadios">
-                    <h4>Megadeth</h4>
-                <img src="../Assets/images/megadeth.jpg" alt="tapa disco de Megadeth">
-                </div>
-            </div>
-
-            <div class="bares">
-                <h3></h3>
-                <div class="indoor">
-                    <h4>Bar de Fondo</h4>
-                <img src="../Assets/images/bardefondo.jpg" alt="imagen del Bar de Fondo">
-                </div>
-                <div class="indoor">
-                    <h4>Lucille</h4>
-                <img src="../Assets/images/lucille.jpg" alt="imagen del bar Lucille">
-                </div>
-                <div class="indoor">
-                    <h4>Open Folk</h4>
-                <img src="../Assets/images/openfolk.jpg" alt="Imagen del bar Open Folk">
-                </div>
-                <div class="indoor">
-                    <h4>The Roxy</h4>
-                <img src="../Assets/images/theroxy.jpg" alt="imagen del bar The Roxy">
-                </div>
-                <div class="indoor">
-                    <h4>Virasoro</h4>
-                <img src="../Assets/images/virasoro.jpg" alt="imagen del bar virasoro">
-                </div>
-            </div>
-        </div>
+        </section> 
     </main>
     <footer>
         <h3 class="titulo_footer">La Fonoteca</h3>
