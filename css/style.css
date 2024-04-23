@@ -217,12 +217,13 @@ header .contenedor .menu .boton :active {
 }
 
 #main_eventos {
-  background: url(../Assets/images/background1.jpeg) center repeat;
+  background: #000000;
   width: 100%;
-  height: 100%;
+  text-align: center;
 }
 
 #inicio {
+  background: url(../Assets/images/background.jpg) center no-repeat;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -250,51 +251,182 @@ header .contenedor .menu .boton :active {
   text-align: center;
 }
 
-#eventos {
-  background: #080808;
-}
-
-#eventos h1{
+h1{
   text-transform: uppercase;
   font-size: 3rem;
-  text-align: center;
   color: #ffffff;
-  padding-top: 50px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#eventos {
+  background: url(../Assets/images/background2.jpg) center;
+  padding: 50px 0;
+  display: grid;
+  grid-template-areas: 
+  "titulo titulo titulo titulo"
+  "main main main main"
+  "headliners headliners headliners headliners"
+  "headliner1 headliner1 headliner2 headliner2"
+  "headliner3 headliner3 headliner4 headliner4"
+  "conciertos conciertos conciertos conciertos"
+  "concierto1 concierto2 concierto3 concierto4"
+  "teatros teatros teatros teatros"
+  "teatro1 teatro2 teatro3 teatro4"
+  "bares bares bares bares"
+  "bar1 bar2 bar3 bar4"
+  ;
+}
+
+#titulo_main {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  grid-area: titulo;
+  margin-top: 20px;
 }
 
 #main_event {
-  background: url() no-repeat top;
-  margin-top: 50px;
+  margin-top: 20px;
+  text-align: center;
+  grid-area: main;
 }
 
-#main_event .event {
-  position: relative;
+#headliners {
+  grid-area: headliners;
+  text-transform: uppercase;
+  font-size: 2rem;
   color: #ffffff;
-  font-size: 1rem;
-  text-align: center;
-} 
-
-#main_event .event2 {
-  position: relative;
-  color: #ffffff;
-  text-align: justify;
-}  
+  margin: 20px 0;
+}
 
 #headliner1 {
-  background: url();
+  grid-area: headliner1;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+h3{
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
 }
 
 #headliner2 {
-  background: url();
+  grid-area: headliner2;
+  gap: 20px;
 }
 
 #headliner3 {
-  background: url();
+  grid-area: headliner3;
+  gap: 20px;
 }
 
 #headliner4 {
-  background: url();
+  grid-area: headliner4;
+  gap: 20px;
 }
+
+#conciertos {
+  grid-area: conciertos;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+#concierto1 {
+  grid-area: concierto1;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+#concierto2 {
+  grid-area: concierto2;
+  gap: 20px;
+}
+
+#concierto3 {
+  grid-area: concierto3;
+  gap: 20px;
+}
+
+#concierto4 {
+  grid-area: concierto4;
+  gap: 20px;
+}
+
+#teatros {
+  grid-area: teatros;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+#teatro1 {
+  grid-area: teatro1;
+  padding-bottom: 20px;
+}
+
+#teatro2 {
+  grid-area: teatro2;
+}
+
+#teatro3 {
+  grid-area: teatro3;
+}
+
+#teatro4 {
+  grid-area: teatro4;
+}
+
+#bares {
+  grid-area: bares;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+#bar1 {
+  grid-area: bar1;
+  padding-bottom: 20px;
+}
+
+#bar2 {
+  grid-area: bar2;
+}
+
+#bar3 {
+  grid-area: bar3;
+}
+
+#bar4 {
+  grid-area: bar4;
+}
+
+button {
+  background: #909090;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #f5f3f3;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 /* FOOTER */
 
 footer {
