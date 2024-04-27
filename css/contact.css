@@ -46,6 +46,20 @@
     margin-bottom: 16px; /* margen inferior */
     resize: vertical /* permite hacer in resize vertical (no horizontal) */
   }
+
+  input[type=email],
+  select,
+  textarea {
+     width: 100%; /* Todo el ancho */
+     padding: 12px; /* padding */ 
+     color: #000000;
+     border: 1px solid #ccc; /* color de borde */
+     border-radius: 4px; /* redondeo de bordes */
+     box-sizing: border-box; /* padding y ancho permanecen en su lugar */
+     margin-top: 6px; /* margen superior */
+     margin-bottom: 16px; /* margen inferior */
+     resize: vertical /* permite hacer in resize vertical (no horizontal) */
+   }
   
   /* estilo para el botón submit */
   input[type=submit] {
