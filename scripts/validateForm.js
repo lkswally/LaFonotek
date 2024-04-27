@@ -20,7 +20,6 @@ function validateForm() {
     }
 
 
-    // Limpiar campos del formulario
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
     document.getElementById("provincia").selectedIndex = 0; //Valor por defecto en el dropdown
