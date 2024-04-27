@@ -1,0 +1,72 @@
+ 
+.container {
+    display: flex;
+    width: 80%; /* Ajusta el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+
+    /*background-image: url('/LaFonoteca/Assets/images/tocadisco02.jpg');*/
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+}
+
+.form-container {
+    flex: 2; /* Ocupa 2 tercios del espacio disponible */
+    padding-right: 20px; /* Espacio entre el formulario y la imagen */
+}
+
+.form-image {
+    flex: 1; /* Ocupa 1 tercio del espacio disponible */
+    min-width: 180px;
+}
+
+.form-image img {
+    width: 100%; /* Ajusta la imagen para que llene su contenedor */
+    display: block; /* Evita espacios en blanco debajo de la imagen */
+}
+
+/* CSS para anchos de página inferiores o iguales a 600px */
+@media (max-width: 600px) {
+    .form-image {
+        display: none; /* Oculta el contenedor de la imagen */
+    }
+}
+
+ /* estilo específico del form */
+ input[type=text],
+ select,
+ textarea {
+    width: 100%; /* Todo el ancho */
+    padding: 12px; /* padding */ 
+    color: #000000;
+    border: 1px solid #ccc; /* color de borde */
+    border-radius: 4px; /* redondeo de bordes */
+    box-sizing: border-box; /* padding y ancho permanecen en su lugar */
+    margin-top: 6px; /* margen superior */
+    margin-bottom: 16px; /* margen inferior */
+    resize: vertical /* permite hacer in resize vertical (no horizontal) */
+  }
+  
+  /* estilo para el botón submit */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
+  }
+  
+  /* cambio de color en botón submit */
+  input[type=submit]:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Zoom in al hacer hover */
+  }
+  
+  /* agrega color y padding */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  } 
