@@ -35,7 +35,7 @@
     <main>
         <div class="container">
             <div class="form-container">
-                <form id="contactForm" action="../Pages/blog.html" onsubmit="return validateForm()" method="post">
+                <form id="contactForm" action="../Pages/contacto.html" method="post">
               
                   <label for="name">Nombre</label>
                   <input type="text" id="name" name="name" placeholder="Ingrese su nombre">
@@ -73,13 +73,25 @@
                   <label for="mensaje">Mensaje</label>
                   <textarea id="mensaje" name="mensaje" placeholder="Dejanos un mensaje" style="height:150px"></textarea>
               
-                  <input type="submit" value="Enviar">
+                  <input type="button" value="Enviar" onclick="validateForm()">
                 </form>
             </div>
             <div class="form-image">
-                <img src="../Assets/images/tocadisco02.jpg" alt="Formulario de contacto">
+                <img src="../Assets/images/form_side.png" alt="Formulario de contacto">
             </div>
-          </div> 
+          </div>
+
+            <div id="popup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <span class="popup-title"></span>
+                        <span class="popup-close" onclick="closePopup()">x</span>
+                    </div>
+                    <div class="popup-message"></div>
+                </div>
+            </div>
+
+        </div> 
     </main>
     <footer>
         <h3 class="titulo_footer">La Fonoteca</h3>
