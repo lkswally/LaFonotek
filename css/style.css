@@ -80,6 +80,9 @@ header .contenedor .menu .boton :active {
   color: #ffffff;
 }
 
+#menu_desplegable {
+  display: none;
+}
 
 /* INDEX */
 
@@ -279,6 +282,8 @@ h1{
 }
 
 #titulo_main {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 30px 0;
   text-transform: uppercase;
   font-size: 2rem;
   color: #ffffff;
@@ -293,6 +298,8 @@ h1{
 }
 
 #headliners {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 30px 0;
   grid-area: headliners;
   text-transform: uppercase;
   font-size: 2rem;
@@ -330,6 +337,8 @@ p {
 }
 
 #conciertos {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 30px 0;
   grid-area: conciertos;
   text-transform: uppercase;
   font-size: 2rem;
@@ -359,6 +368,8 @@ p {
 }
 
 #teatros {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 30px 0;
   grid-area: teatros;
   text-transform: uppercase;
   font-size: 2rem;
@@ -384,6 +395,8 @@ p {
 }
 
 #bares {
+  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  padding: 30px 0;
   grid-area: bares;
   text-transform: uppercase;
   font-size: 2rem;
@@ -408,29 +421,30 @@ p {
   grid-area: bar4;
 }
 
-button {
-  background: #909090;
-  padding: 10px 20px;
-  border-radius: 5px;
+.boton_ticket {
   text-decoration: none;
+  margin-top: 5px;
 }
 
-button:hover {
-  background: #f5f3f3;
-  cursor: pointer;
-}
-
-button a {
+.boton_ticket a {
+  background: #909090;
   text-decoration: none;
   color: #000000;
   font-weight: 900;
   text-transform: uppercase;
+  padding: 5px;
+}
+
+.boton_ticket a:hover {
+  background: #f5f3f3;
+  cursor: pointer;
 }
 
 /* FOOTER */
 
 footer {
   background-color: #e2d2b0;
+  background-attachment: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -440,6 +454,13 @@ footer {
 footer .titulo_footer {
   padding-top: 20px;
 }
+
+footer .titulo_footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #ffffff;
+}  
 
 footer .footer_datos .datos li {
   list-style: none;
@@ -462,4 +483,22 @@ footer .redes {
 footer .redes a :hover {
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1024px){
+  
+}
+
+@media screen and (max-width:768px){
+  
+}
+
+@media screen and (max-width:425px){
+  
+}
+
+@media screen and (max-width:320px){
+  
 }
