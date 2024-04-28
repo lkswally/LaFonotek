@@ -2,18 +2,28 @@
 
 function validateForm() {
 
+    console.log("Validating form...") //para debug
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("mensaje").value;
 
     if (name == "") {
-        alert("Por favor ingrese su nombre.");
+        alert("Ingrese su nombre.");
         return false;
     }
+    
+    // Validación de correo electrónico
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
     if (email == "") {
-        alert("Por favor ingrese su email.");
+        alert("Ingrese su email.");
+        return false;
+    }    
+    else if (!emailRegex.test(email)) {
+        alert("Ingrese un correo electrónico válido.");
         return false;
     }
+
     if (message == "") {
         alert("Por favor deje un mensaje.");
         return false;
