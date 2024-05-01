@@ -28,24 +28,26 @@
                     <a href="">Sign up</a>
                 </div>
             </div>
+        </div>   
+        <div id="hidden">
             <div id="menu_desplegable">
-                <img src="./Assets/images/Logo2.jpg" alt="Icono La Fonoteca">
+                <img src="../Assets/images/Logo2.jpg" alt="Icono La Fonoteca">
                 <div class="lista_desplegable">
                     <nav>
-                        <ul>
-                            <li><a class="active" href="./index.html">Inicio</a></li>
-                            <li><a href="./Pages/catalogo.html">Catalogo</a></li>
-                            <li><a href="./Pages/eventos.html">Eventos</a></li>
-                            <li><a href="./Pages/contacto.html">Contacto</a></li>
-                        </ul>
+                        <input type="checkbox" id="menu">
+                        <label for="menu"><img src="../Assets/images/menu.png" alt="icono menu"></label>
+                        <ol>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../Pages/catalogo.html">Catalogo</a></li>
+                            <li><a class="active" href="../Pages/eventos.html">Eventos</a></li>
+                            <li><a href="../Pages/contacto.html">Contacto</a></li>
+                            <li class="li"><a href="">Login</a></li>
+                            <li class="li"><a href="">Sign up</a></li>
+                        </ol>
                     </nav>
                 </div>
-                <div class="boton_deplegable">
-                    <a href="">Login</a>
-                    <a href="">Sign up</a>
-                </div>
             </div>
-        </div>       
+        </div>    
     </header>
     <main id="main_eventos">
         <section id="inicio">
@@ -147,7 +149,6 @@
         </section> 
     </main>
     <footer>
-        <h3 class="titulo_footer"><a href="#body_eventos">La Fonoteca</a></h3>
         <div class="footer_datos">
             <ul class="datos">
                 <li><a href="">Quienes somos</a></li>
