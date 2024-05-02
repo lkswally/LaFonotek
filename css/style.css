@@ -510,13 +510,41 @@ h4{
   text-align: center;
 }
 
-h1{
+#animacion{
   text-transform: uppercase;
   font-size: 3rem;
   color: #ffffff;
   padding: 50px 0;
   text-align: center;
+  -webkit-animation: animacion 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: animacion 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@-webkit-keyframes animacion {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes animacion {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
 #eventos {
   background: url(../Assets/images/background2.jpg) center;
@@ -554,7 +582,6 @@ h1{
 }
 
 #headliners {
-  position: relative;
   background: url(../Assets/images/fondo_titulo.png) center no-repeat;
   padding: 100px 0;
   grid-area: headliners;
@@ -1238,6 +1265,14 @@ footer .redes a :hover {
   h1 {
     font-size: 1.3rem;
   }
+
+  h3 {
+    font-size: 15px;
+  }
+
+ .event2 {
+  font-size: x-small;
+ }
   
   #buscar_eventos input {
     width: 200px;
