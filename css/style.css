@@ -107,7 +107,7 @@ ol{
   display: none;
 }
 
-input:checked  ~ ol{
+#menu:checked  ~ ol{
   display:block;
 }
 
@@ -115,7 +115,7 @@ input:checked  ~ ol{
   display: none;
  }
 
-label {
+.label {
   box-sizing: border-box;
   display: inline-block;
   border: 1px solid black;
@@ -230,17 +230,6 @@ h3{
   text-align: center;
   color: rgb(201, 191, 191);
 }
-
-h4{
-  font-style: oblique;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  color: rgb(201, 191, 191);
-  padding: 20px;
-  margin: 20px;
-
- }
 
 .container-mision{
   color: rgb(155, 140, 140);
@@ -503,10 +492,18 @@ h4{
   padding-top: 80px;
 }
 
-#buscar_eventos input{
+#buscar_eventos .input{
   width:450px;
   font-size: 1.5rem;
   padding: 5px 0;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #ffffff;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -516,8 +513,8 @@ h4{
   color: #ffffff;
   padding: 50px 0;
   text-align: center;
-  -webkit-animation: animacion 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: animacion 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: animacion 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	animation: animacion 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
 }
 
 @-webkit-keyframes animacion {
@@ -597,6 +594,12 @@ h4{
 
 h3{
   color: #ffffff;
+}
+
+.titulo_bar{ 
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
 }
 
 p {
@@ -934,22 +937,22 @@ footer .redes a :hover {
   }
   #bar1 img {
     width: 55%;
-    height: 85%;
+    height: 70%;
 
   }
   #bar2 img {
     width: 55%;
-    height: 85%;
+    height: 70%;
 
   }
   #bar3 img {
     width: 55%;
-    height: 85%;
+    height: 70%;
 
   }
   #bar4 img {
     width: 55%;
-    height: 85%;
+    height: 70%;
 
   }
 }
@@ -963,7 +966,7 @@ footer .redes a :hover {
     height: 70%;
   }
 
-  #buscar_eventos input{
+  #buscar_eventos .input{
     width:350px;
   }
   #main_event img {
@@ -1122,19 +1125,19 @@ footer .redes a :hover {
   }
   #bar1 img {
     width: 55%;
-    height: 85%;
+    height: 70%;
   }
   #bar2 img {
     width: 55%;
-    height: 85%;
+    height: 70%;
   }
   #bar3 img {
     width: 55%;
-    height: 85%;
+    height: 70%;
   }
   #bar4 img {
     width: 55%;
-    height: 85%;
+    height: 70%;
   }
   footer {
     justify-content: space-evenly;
@@ -1198,7 +1201,7 @@ footer .redes a :hover {
     width: 18%;
     padding-top: 10px;
   }
-  #buscar_eventos input{
+  #buscar_eventos .input{
     width: 300px;
     font-size: 1rem;
   }
@@ -1218,7 +1221,7 @@ footer .redes a :hover {
 
 @media screen and (max-width:425px) and (min-width:321px){
 
-  #buscar_eventos input{
+  #buscar_eventos .input{
     width:250px;
     font-size: 1rem;
   }
@@ -1274,7 +1277,7 @@ footer .redes a :hover {
   font-size: x-small;
  }
   
-  #buscar_eventos input {
+  #buscar_eventos .input {
     width: 200px;
     font-size: 1rem;
   }
