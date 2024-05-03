@@ -90,7 +90,23 @@
                   <label for="mensaje">Mensaje</label>
                   <textarea id="mensaje" name="mensaje" placeholder="Dejanos un mensaje" style="height:150px"></textarea>
               
-                  <input type="button" value="Enviar" onclick="validateForm()">
+                  <label for="tipo_contacto">Es por... </label>
+                  <div class="radio-container">
+                    <label class="radio-label">
+                      <input type="radio" class="radio-input" name="motivo" value="consulta" checked> Consulta
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" class="radio-input" name="motivo" value="sugerencia"> Sugerencia
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" class="radio-input" name="motivo" value="reclamo"> Reclamo
+                      </label>
+                  </div>
+
+                <label for="imagen">En caso de reclamo, carga tu ticket de compra</label>
+                <input type="file" id="imagen" name="imagen" accept="image/jpeg, image/jpg">
+                
+                <input type="button" value="Enviar" onclick="validateForm()">
                 </form>
             </div>
             <div class="form-image">

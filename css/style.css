@@ -738,9 +738,9 @@ p {
  
 .container {
   display: flex;
-  width: 55%; /* Ajusta el ancho*/
+  width: 65%; /* Ajusta el ancho*/
   margin: 0 auto; /* Centra */
-  max-height: 600px;
+  max-height: 800px;
   padding-top: 200px;
 }
 
@@ -755,7 +755,7 @@ p {
 }
 
 .form-image img {
-  width: 100%; /* Ajusta la imagen para que llene su contenedor */
+  width: 100%; /* para que la imagen ocupe todo el cont. */
   max-height: 700px;
   max-width: 200px;
   display: block; /* Evita espacios en blanco abajo de la imagen */
@@ -764,17 +764,36 @@ p {
 /* estilo específico del form */
 input[type=text],
 input[type=email],
+input[type=file],
 select,
 textarea {
   width: 100%; /* Todo el ancho */
+  height: 25%;
   padding: 12px; /* padding */ 
   color: #000000;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical /* permite hacer in resize vertical (no horizontal) */
+  margin-top: 2px;
+  margin-bottom: 12px;
+  resize: vertical /* permite hacer resize vertical (no horizontal) */
+}
+
+.radio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* para que quede en columnas */
+  gap: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.radio-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.radio-input {
+  margin-right: 5px;
 }
 
 /* estilo para el botón submit */
