@@ -223,19 +223,19 @@ h2{
   margin: 20px; 
 }
 
-h3{
+#history{
   font-style: oblique;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   color: rgb(201, 191, 191);
+  padding: 10px;
 }
 
 .container-mision{
   color: rgb(155, 140, 140);
   font-weight: bolder;
   padding-right: 200px;
-  margin-top: 10px 10px 10px ;
   padding: 50px;
 }
  
@@ -262,10 +262,10 @@ h3{
 .productos li{
   display: inline-block;
   text-align: center;
-  width: 50%;
+  width: 30%;
   vertical-align: top;
   margin: 0 1.5%;
-  padding: 50px 20px;
+  padding: 30px 20px;
   box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 10px;    
@@ -280,7 +280,7 @@ h3{
 }
 
 .productos h4{
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -308,7 +308,10 @@ h3{
 .container-video{
   margin: 20px auto;
   position: relative;
-  left: 50%;
+  left: 30%;
+  width: 50%;
+  height: 300px;
+  
  }
 
 /*CATALOGO*/
@@ -1143,7 +1146,118 @@ footer .redes a :hover {
     justify-content: space-evenly;
     padding: 20px 20px;
   }
+
+  /*RESPONSIVE INDEX*/
+
+  #container-index{
+    height: auto;
+    padding-top: 50px;
+  }
+  #titulo_index{
+    font-size: 2rem;
+    padding-top: 50px;
+  }
+
+  #animacion{
+    font-size: 2.5rem;
+    padding-top: 50px;
+  }
+  #encabezado{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    }
+  #boton_index{
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .container-mision{
+    padding: 20px;
+  }
+  .img-mision{
+    width: 50%;
+    float: none;
+  }
+
+  .text-mision{
+    width: 100%;
+    text-align: justify;
+  }
+  .container-historia{
+    margin: 40px;
+    padding: 15px 5px; 
+  }
+
+  .text-history{
+    width: 100%;
+    text-align: justify;
+  }
+
+  .productos{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .productos h4{
+    font-size: 23px;
+  }
+  .productos li{
+    width: 45%;
+    margin: 0 2.5%;
+    padding: 20px 10px;
+  }
+  .productos li :hover{
+    border-color: #088c19;
+  }
+
+  #img-galeria{
+    font-size: 25px;
+  }
+ 
+  .producto-descripcion{
+    font-size: 16px;
+  }
+  .producto-año{
+    font-size: 18px;
+  }
+  .texto-gardel{
+    padding: 0 5px;
+  }
+  .container-video{
+    left: 0;
+  }
 }
+
+@media only screen and (max-width: 480px){
+  
+  .productos li{
+    width: 90%;
+    margin: 0.5%;
+    padding: 5% 5%;
+  }
+  .productos{
+    font-size: 5vw;
+  }
+  #img-galeria{
+    font-size: 5vw;
+  }
+  .producto-descripcion{
+    font-size: 2.5vw;
+  }
+  .producto-año{
+    font-size: 3vw;
+    margin-top: 2vw;
+  }
+  .container-video{
+    width: 100%;
+    max-width: 350px;
+    margin: 1em auto;
+  }
+}
+
+/*FIN RESPONSIVE INDEX*/
+
 
 /* para ancho inferior o igual a 600px */
 @media (max-width: 600px) {
