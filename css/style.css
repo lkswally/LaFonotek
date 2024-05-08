@@ -240,10 +240,8 @@ h2{
 }
  
 .img-mision{
-  margin-left: 10px;
-  margin-right: 10px; 
-  width: 15%;
-  float: left;  
+  width: 40%; 
+  margin-left: 30%;
 }
 
 .container-historia{
@@ -254,9 +252,8 @@ h2{
 }
 
 .productos{
-  width: 940px;
-  margin: 0 auto;
-  padding: 50px;
+  width: 100%;
+  padding: 50px 0;
 }
 
 .productos li{
@@ -264,7 +261,6 @@ h2{
   text-align: center;
   width: 30%;
   vertical-align: top;
-  margin: 0 1.5%;
   padding: 30px 20px;
   box-sizing: border-box;
   border: 2px solid #000000;
@@ -288,9 +284,14 @@ h2{
   font-size: 33px;
 }
 
+.productos li img {
+  width: 100%;
+}
+
 .producto-descripcion{
   font-size: 18px;
 }
+
 .producto-año{
   font-size: 20px;
   font-weight: bold;
@@ -298,11 +299,17 @@ h2{
 }
 
 
-.texto-gardel{
+.text{
+  font-size: 1rem;
   font-weight: bold;
   color: rgb(155, 140, 140);
   padding: 0 10px;
-  
+  text-align: justify;
+  text-decoration: none;
+}
+
+a {
+  color: #1e8278;
 }
 
 .container-video{
@@ -1194,10 +1201,6 @@ footer .redes a :hover {
   .container-mision{
     padding: 20px;
   }
-  .img-mision{
-    width: 50%;
-    float: none;
-  }
 
   .text-mision{
     width: 100%;
@@ -1214,15 +1217,15 @@ footer .redes a :hover {
   }
 
   .productos{
-    width: 100%;
-    padding: 20px;
+    width: 65%;
+    padding: 20px 0 20px 60px;   
   }
 
   .productos h4{
     font-size: 23px;
   }
   .productos li{
-    width: 45%;
+    width: 85%;
     margin: 0 2.5%;
     padding: 20px 10px;
   }
@@ -1248,38 +1251,16 @@ footer .redes a :hover {
   }
 }
 
-@media only screen and (max-width: 480px){
-  
-  .productos li{
-    width: 90%;
-    margin: 0.5%;
-    padding: 5% 5%;
-  }
-  .productos{
-    font-size: 5vw;
-  }
-  #img-galeria{
-    font-size: 5vw;
-  }
-  .producto-descripcion{
-    font-size: 2.5vw;
-  }
-  .producto-año{
-    font-size: 3vw;
-    margin-top: 2vw;
-  }
-  .container-video{
-    width: 100%;
-    max-width: 350px;
-    margin: 1em auto;
-  }
-}
-
-/*FIN RESPONSIVE INDEX*/
-
-
 /* para ancho inferior o igual a 600px */
 @media (max-width: 600px) {
+
+  /* INDEX */
+
+  .productos{
+    width: 70%;
+    padding: 20px 0 20px 60px;   
+  }
+  
   h1 {
     font-size: 2.2rem;
   }
@@ -1330,10 +1311,34 @@ footer .redes a :hover {
 
 @media screen and (max-width:456px) and (min-width:426px){
   
-  .redes a img {
-    width: 18%;
-    padding-top: 10px;
+  /* INDEX */
+
+  .productos li{
+    width: 90%;
+    margin: 0.5%;
+    padding: 5% 5%;
   }
+  .productos{
+    padding: 20px 0 20px 50px;
+  }
+  #img-galeria{
+    font-size: 5vw;
+  }
+  .producto-descripcion{
+    font-size: 14px;
+  }
+  .producto-año{
+    font-size: 14px;
+    margin-top: 2vw;
+  }
+  .container-video{
+    width: 100%;
+    max-width: 350px;
+    margin: 1em auto;
+  }
+}
+
+  /* EVENTOS */
   #buscar_eventos .input{
     width: 300px;
     font-size: 1rem;
@@ -1347,12 +1352,40 @@ footer .redes a :hover {
     font-size: smaller;
   }
 
+  /* FOOTER */
+
+  .redes a img {
+    width: 18%;
+    padding-top: 10px;
+  }
+
   .footer_datos li a {
     font-size: 0.8rem;
   }
-}
+
 
 @media screen and (max-width:425px) and (min-width:321px){
+
+  /* INDEX */
+
+  .productos{
+    width: 65%;
+    padding: 20px 0 20px 30px;   
+  }
+
+  .productos h4 {
+    font-size: 18px;
+  }
+
+  .producto-descripcion{
+    font-size: 11px;
+  }
+  .producto-año{
+    font-size: 11px;
+    margin-top: 2vw;
+  }
+
+  /* EVENTOS */
 
   #buscar_eventos .input{
     width:250px;
@@ -1398,6 +1431,25 @@ footer .redes a :hover {
 
 @media screen and (max-width:320px){
 
+  /* INDEX */
+
+  .productos{
+    padding: 20px 0 20px 20px; 
+  }
+
+  .productos h4 {
+    font-size: 14px;
+  }
+
+  .producto-descripcion{
+    font-size: 10px;
+  }
+  .producto-año{
+    font-size: 10px;
+    margin-top: 2vw;
+  }
+
+
   h1 {
     font-size: 1.3rem;
   }
@@ -1405,6 +1457,8 @@ footer .redes a :hover {
   h3 {
     font-size: 15px;
   }
+
+  /* EVENTOS */
 
  .event2 {
   font-size: x-small;
@@ -1418,6 +1472,8 @@ footer .redes a :hover {
   .boton_ticket a{
     font-size: x-small;
   }
+
+  /* FOOTER */
 
   .redes a img {
     width: 15%;
