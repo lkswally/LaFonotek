@@ -45,7 +45,7 @@ function showPopup(nombreUsuario) {
     var popupTitle = document.querySelector(".popup-title");
     var popupMessage = document.querySelector(".popup-message");
     popupTitle.textContent = "¡Hola, " + nombreUsuario + "!";
-    popupMessage.textContent = "Gracias por completar el formulario de contacto.\n Nos vamos a poner en contacto para responder a tu consulta.";
+    popupMessage.textContent = "Gracias por completar el formulario de contacto.\n Nos pondremos en contacto para responderte...";
     popup.style.display = "block";
 }
 
