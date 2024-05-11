@@ -1,4 +1,4 @@
-// script para validación de formulario
+// Script para validación de formulario
 
 function validateForm() {
 
