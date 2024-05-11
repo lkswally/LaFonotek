@@ -11,6 +11,10 @@ html {
   scroll-behavior:smooth;
 }
 
+body {
+  background-color: #000000;
+}
+
 a {
   text-decoration: none;
 }
@@ -101,7 +105,7 @@ header .menu .boton :active {
 }
 
 .lista_desplegable {
-  width: 25%;
+  width: 100%;
 }
 
 ol{
@@ -132,7 +136,6 @@ ol{
 
 ol li {
   text-align: center;
-  background: #1e8278;
   margin: 0;
   padding: 10px;
   list-style: none;
@@ -140,27 +143,38 @@ ol li {
 }
 
 ol li:hover {
-  background-color: #0b5850;
+  background-color: #000000;
   cursor: pointer;
 }
 
 ol .li {
-  background-color: #080808;
+  cursor: pointer;
 }
 
 ol li:hover {
-  background-color: #313131;
   cursor: pointer;
 }
 
 ol li a {
   text-decoration: none;
+  color: #2cf9e4;
+  font-weight: bolder;
+}
+
+ol li a:hover {
+  text-decoration: none;
   color: #fff;
+  font-weight: bolder;
 }
 
 ol .li a {
   text-decoration: none;
   color: #e2d2b0;
+}
+
+ol .li a:hover {
+  text-decoration: none;
+  color: #0b5850;
 }
 
 /* INDEX */
@@ -406,9 +420,12 @@ a {
 
 /* EN CONSTRUCCION */
 
-#construccion {
-  background: url(../Assets/images/enconstruccion.jpg)no-repeat;
+#construccion{
   height: 100vh;
+  background-image: url("../Assets/images/enconstruccion.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
 /* EVENTOS */
@@ -1185,7 +1202,7 @@ footer .redes a :hover {
     padding-top: 50px;
   }
 
-  #animacion{
+  .animacion{
     font-size: 2.5rem;
     padding-top: 50px;
   }

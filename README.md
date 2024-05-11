@@ -1,8 +1,8 @@
-Proyecto Grupo 1 Comision Nº 24141
+Proyecto Grupo 1 Comisión Nº 24141
 
 LA FONOTECA:
 
-Una Web dedicada a la musica y sus expresiones
+Una proyecto dedicado a la música y sus expresiones
 
 Desarrolladres:
 
