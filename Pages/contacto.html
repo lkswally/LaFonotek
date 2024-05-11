@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="disqueria online. eventos musicales, grupo 1 Codo a Codo 4.0">
-    <meta keywords="musica, eventos, la fonoteca, discos">
+    <meta name="description" content="disqueria online, eventos musicales, Grupo 1 Codo a Codo 4.0">
+    <meta name="keywords" content="musica, eventos, fonoteca, discos">
+    <link rel="icon" href="./Assets/images/icono.png" type="image/png">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto - TestPage</title>
 </head>
@@ -35,7 +36,7 @@
                 <div class="lista_desplegable">
                     <nav>
                         <input type="checkbox" id="menu">
-                        <label for="menu"><img src="../Assets/images/menu.png" alt="icono menu"></label>
+                        <label for="menu"><img id="icono_menu" src="../Assets/images/menu.png" alt="icono menu"></label>
                         <ol>
                             <li><a href="../index.html">Inicio</a></li>
                             <li><a href="../Pages/catalogo.html">Catalogo</a></li>
@@ -90,7 +91,7 @@
                   <label for="mensaje">Mensaje</label>
                   <textarea id="mensaje" name="mensaje" placeholder="Dejanos un mensaje" style="height:150px"></textarea>
               
-                  <label for="tipo_contacto">Es por... </label>
+                  <label>Es por... </label>
                   <div class="radio-container">
                     <label class="radio-label">
                       <input type="radio" class="radio-input" name="motivo" value="consulta" checked> Consulta
@@ -113,7 +114,6 @@
                 <img src="../Assets/images/form_side.png" alt="Formulario de contacto">
             </div>
           </div>
-
             <div id="popup" class="popup" style="display: none;">
                 <div class="popup-content">
                     <div class="popup-header">
@@ -123,8 +123,6 @@
                     <div class="popup-message"></div>
                 </div>
             </div>
-
-        </div> 
     </main>
     <footer>
         <div class="footer_datos">
