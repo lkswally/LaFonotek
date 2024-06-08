@@ -12,4 +12,5 @@ Desarrolladres:
 4. Federico Sanchez => Eventos
 
 
-![image](https://github.com/FedeSanchez79/LaFonoteca/assets/120589911/4e871c7c-999e-4db7-9787-0ed79dcc826e)
+[
+](https://drive.google.com/file/d/1ZWwECXFzqn_ADuoiyBYKNodON5x7dBtU/view?usp=sharing)
