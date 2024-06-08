@@ -12,5 +12,4 @@ Desarrolladres:
 4. Federico Sanchez => Eventos
 
 
-[
-](https://drive.google.com/file/d/1ZWwECXFzqn_ADuoiyBYKNodON5x7dBtU/view?usp=sharing)
+https://drive.google.com/file/d/1ZWwECXFzqn_ADuoiyBYKNodON5x7dBtU/view?usp=sharing
