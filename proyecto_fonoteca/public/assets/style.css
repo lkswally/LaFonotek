@@ -184,7 +184,7 @@ ol .li a:hover {
 }
 
 #container-index{
-  background: url(../Assets/images/background_index.jpg) center;
+  background: url(background_index.jpg) center;
   width: 100%;
   height: auto;
   padding-top: 50px;
@@ -341,7 +341,7 @@ a {
 
 #inicio_catalogo {
   height: 80vh;
-  background: url(../Assets/images/background_catalogo.jpg) center ;
+  background: url(background_catalogo.jpg) center ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -422,7 +422,7 @@ a {
 
 #construccion{
   height: 100vh;
-  background-image: url("../Assets/images/enconstruccion.jpg");
+  background-image: url("enconstruccion.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -443,7 +443,7 @@ a {
 }
 
 #inicio {
-  background: url(../Assets/images/background.jpg) center no-repeat;
+  background: url(background.jpg) center no-repeat;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -521,7 +521,7 @@ h1 {
 }
 
 #eventos {
-  background: url(../Assets/images/background2.jpg) center;
+  background: url(background2.jpg) center;
   padding: 50px 0;
   display: grid;
   grid-template-areas: 
@@ -540,7 +540,7 @@ h1 {
 }
 
 #titulo_main {
-  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  background: url(fondo_titulo.png) center no-repeat;
   padding: 50px 0;
   text-transform: uppercase;
   font-size: 2rem;
@@ -556,7 +556,7 @@ h1 {
 }
 
 #headliners {
-  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  background: url(fondo_titulo.png) center no-repeat;
   padding: 100px 0;
   grid-area: headliners;
   text-transform: uppercase;
@@ -598,7 +598,7 @@ p {
 }
 
 #conciertos {
-  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  background: url(fondo_titulo.png) center no-repeat;
   padding: 100px 0;
   grid-area: conciertos;
   text-transform: uppercase;
@@ -629,7 +629,7 @@ p {
 }
 
 #teatros {
-  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  background: url(fondo_titulo.png) center no-repeat;
   padding: 100px 0;
   grid-area: teatros;
   text-transform: uppercase;
@@ -659,7 +659,7 @@ p {
 }
 
 #bares {
-  background: url(../Assets/images/fondo_titulo.png) center no-repeat;
+  background: url(fondo_titulo.png) center no-repeat;
   padding: 100px 0;
   grid-area: bares;
   text-transform: uppercase;
@@ -1300,27 +1300,27 @@ footer .redes a :hover {
   }
 
   #titulo_main{
-    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    background: url(fondo_titulo1.png) center no-repeat;
     font-size: 1.5rem;
   }
 
   #headliners {
-    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    background: url(fondo_titulo1.png) center no-repeat;
     font-size: 1.5rem;
   }
 
   #conciertos {
-    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    background: url(fondo_titulo1.png) center no-repeat;
     font-size: 1.5rem;
   }
 
   #teatros {
-    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    background: url(fondo_titulo1.png) center no-repeat;
     font-size: 1.5rem;
   }
 
   #bares {
-    background: url(../Assets/images/fondo_titulo1.png) center no-repeat;
+    background: url(fondo_titulo1.png) center no-repeat;
     font-size: 1.5rem;
   }
 
