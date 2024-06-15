@@ -1,33 +1,27 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/db');
-const Membresia = require('./membresia');
-
-const Usuario = sequelize.define('Usuario', {
-  idUsuario: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
-    primaryKey: true
-  },
-  email: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    unique: true
-  },
-  password: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
-  nombre: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
-  apellido: {
-    type: DataTypes.STRING,
-    allowNull: false
+'use strict';
+const {
+  Model
+} = require('sequelize');
+module.exports = (sequelize, DataTypes) => {
+  class usuario extends Model {
+    /**
+     * Helper method for defining associations.
+     * This method is not a part of Sequelize lifecycle.
+     * The `models/index` file will call this method automatically.
+     */
+    static associate(models) {
+      // define association here
+    }
   }
-});
-
-// Definir relación con Membresia (opcional si no se usa)
-Usuario.belongsTo(Membresia, { foreignKey: 'Membresia_idMembresia' });
-
-module.exports = Usuario;
+  usuario.init({
+    idUsuario: DataTypes.INTEGER,
+    nombre: DataTypes.STRING,
+    apellido: DataTypes.STRING,
+    email: DataTypes.STRING,
+    contrasena: DataTypes.STRING
+  }, {
+    sequelize,
+    modelName: 'usuario',
+  });
+  return usuario;
+};

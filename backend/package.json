@@ -1,17 +1,17 @@
 {
-  "name": "ventadediscos-backend",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "Backend para la gestión de una tienda de discos online.",
+  "description": "Proyecto para la gestión de discos Online",
   "main": "app.js",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "mysql2": "^3.10.1",
     "sequelize": "^6.37.3"
   },
   "scripts": {
-    "start": "node app.js" ,
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/FedeSanchez79/LaFonoteca/issues"
   },
-  "homepage": "https://github.com/FedeSanchez79/LaFonoteca#readme"
+  "homepage": "https://github.com/FedeSanchez79/LaFonoteca#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }

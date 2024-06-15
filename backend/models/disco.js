@@ -1,33 +1,28 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/db'); // <-- conexión a la base de datos!
+'use strict';
+const { Model } = require('sequelize');
 
-const Disco = sequelize.define('Disco', {
-  idDisco: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
-    primaryKey: true
-  },
-  nombre: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
-  precio: {
-    type: DataTypes.DECIMAL(10, 2),
-    allowNull: false
-  },
-  artista: {
-    type: DataTypes.STRING
-  },
-  anioLanzamiento: {
-    type: DataTypes.INTEGER
-  },
-  GeneroIdGenero: { // Clave foránea
-    type: DataTypes.INTEGER,
-    references: {
-      model: 'Generos', // Nombre del modelo de la tabla relacionada
-      key: 'idGenero'
+module.exports = (sequelize, DataTypes) => {
+  class Disco extends Model {
+    static associate(models) {
+      this.belongsTo(models.Genero, { foreignKey: 'GeneroIdGenero', as: 'genero' });
     }
   }
-});
 
-module.exports = Disco;
+  Disco.init({
+    idDisco: {
+      type: DataTypes.INTEGER,
+      primaryKey: true // Indica que esta es la clave primaria
+    },
+    nombre: DataTypes.STRING,
+    precio: DataTypes.DECIMAL,
+    artista: DataTypes.STRING,
+    anioLanzamiento: DataTypes.INTEGER,
+    GeneroIdGenero: DataTypes.INTEGER,
+    imagen: DataTypes.STRING
+  }, {
+    sequelize,
+    modelName: 'Disco',
+  });
+
+  return Disco; // Exporta la clase Disco directamente
+};

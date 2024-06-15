@@ -1,7 +1,8 @@
 {
-  "dependencies": {
-    "@vue/cli": "^5.0.8",
-    "axios": "^1.7.2",
-    "vue": "^3.4.29"
-  }
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+  "start": "concurrently \"node app.js\" \"cd frontend && npm run serve\""
+}
 }
