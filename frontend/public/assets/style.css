@@ -742,6 +742,7 @@ p {
 input[type=text],
 input[type=email],
 input[type=file],
+input[type=password],
 select,
 textarea {
   width: 100%; /* Todo el ancho */

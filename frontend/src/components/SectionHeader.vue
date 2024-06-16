@@ -14,7 +14,7 @@
                   </nav>
               </div>
               <div class="boton">
-                <router-link to="/construccion">Login</router-link>
+                <router-link to="/login">Login</router-link>
                 <router-link to="/construccion">Sign Up</router-link>
               </div>
           </div>

@@ -4,6 +4,7 @@ import CatalogoView from './views/CatalogoView.vue';
 import EventosView from './views/EventosView.vue';
 import ContactoView from './views/ContactoView.vue';
 import ConstructionView from './views/ConstructionView.vue';
+import Login from './components/Login.vue';
 
 const BASE_URL = process.env.VITE_BASE_URL || '/'; // Valor por defecto '/' en desarrollo
 
@@ -14,7 +15,8 @@ const router = createRouter({
     { path: '/catalogo', name: 'catalogo', component: CatalogoView },
     { path: '/eventos', name: 'eventos', component: EventosView },
     { path: '/contacto', name: 'contacto', component: ContactoView },
-    { path: '/construccion', name: 'construccion', component: ConstructionView }
+    { path: '/construccion', name: 'construccion', component: ConstructionView },
+    { path: '/login', name: 'login', component: Login}
   ]
 });
 
