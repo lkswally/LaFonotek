@@ -23,7 +23,7 @@ const sequelize = new Sequelize(config.development);
     await sequelize.authenticate();
     console.log('Conexión establecida correctamente!');
 
-    // Sincroniza los modelos
+    // Se sincronizan los modelos
     await sequelize.sync({ alter: true }); 
     console.log('Tablas sincronizadas con la base de datos.');
 

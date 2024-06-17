@@ -42,7 +42,7 @@ const authRoutes = require('./routes/auth');
 app.use('/discos', discosRoutes);
 app.use('/generos', generosRoutes);
 app.use('/usuarios', usuariosRoutes); // Mantenemos usuarios para autenticación (opcional)
-app.use('/login', authRoutes);
+app.use('/', authRoutes);
 
 // Iniciar servidor
 const PORT = process.env.PORT || 3000;

@@ -10,12 +10,16 @@ module.exports = (sequelize, DataTypes) => {
   Usuario.init({
     idUsuario: {
       type: DataTypes.INTEGER,
-      primaryKey: true // Indica que esta es la clave primaria
+      primaryKey: true
     },
     nombre: DataTypes.STRING,
     apellido: DataTypes.STRING,
     email: DataTypes.STRING,
     contrasena: DataTypes.STRING,
+    isStaff: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false // por defecto, no es staff
+    }
   }, {
     sequelize,
     modelName: 'Usuario',

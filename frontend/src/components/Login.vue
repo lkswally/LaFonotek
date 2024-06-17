@@ -26,6 +26,7 @@
   
   <script>
   import axios from 'axios';
+  import Swal from 'sweetalert2';
   
   export default {
     data() {
@@ -44,11 +45,25 @@
             .then(response => {
                 // Login exitoso
                 console.log('Login exitoso:', response.data);
-                localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
-                this.$router.push('/catalogo');
+
+                Swal.fire({
+                    icon: 'success',
+                    title: response.data.isAdmin ? '¡Bienvenido, administrador!' : '¡Bienvenido!', // Este es un mensaje condicional
+                    text: 'Has iniciado sesión correctamente.'
+                }).then(() => {
+                        setTimeout(() => {
+                        localStorage.setItem('usuario', JSON.stringify(response.data.usuario)); // Guardo en localstorage
+                        this.$router.push('/catalogo'); // Lo mando al catálogo
+                        }, 200); // Retraso la redirección, así evito el error ResizeObserver
+                    });
             })
             .catch(error => {
-                console.error('Hay un error en el login:', error.response.data);
+                console.error('Error en el login:', error); 
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error en el login',
+                    text: 'Ha ocurrido un error al iniciar sesión.' 
+                });
             });
         }
     }
