@@ -1,6 +1,5 @@
 <template>
     <div>
-      <SectionHeader />
       <main id="main_eventos">
         <section id="inicio">
             <div id="slash">
@@ -104,7 +103,6 @@
             </div>
         </section> 
     </main>
-      <SectionFooter />
     </div>
   </template>
   

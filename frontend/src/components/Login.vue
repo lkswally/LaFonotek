@@ -1,6 +1,5 @@
 <template>
     <div>
-    <SectionHeader />
         <main id="main_contacto">
             <div class="container">
                 <div class="form-container">
@@ -14,7 +13,6 @@
                             <label for="password">Contraseña:</label>
                             <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" v-model="password" required>
                         </div>
-                        <!-- <input type="button" value="Iniciar Sesión!" @click="submitLogin"> -->
                         <button type="submit">Iniciar Sesión!</button>
                     </form>
                 </div>
@@ -23,7 +21,6 @@
             </div>
             </div>
         </main>
-    <SectionFooter />
     </div>
   </template>
   
@@ -48,7 +45,7 @@
                 // Login exitoso
                 console.log('Login exitoso:', response.data);
                 localStorage.setItem('usuario', JSON.stringify(response.data.usuario));
-                this.$router.push('/perfil');
+                this.$router.push('/catalogo');
             })
             .catch(error => {
                 console.error('Hay un error en el login:', error.response.data);

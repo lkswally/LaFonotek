@@ -1,6 +1,5 @@
 <template>
     <div>
-      <SectionHeader />
       <main id="main_contacto">
         <div class="container">
             <div class="form-container">
@@ -75,7 +74,6 @@
                 </div>
             </div>
     </main>
-      <SectionFooter />
     </div>
   </template>
   

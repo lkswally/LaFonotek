@@ -1,6 +1,5 @@
   <template>
     <div>
-      <SectionHeader />
       <main>
         <section id="container-index">
             <h1 class="animacion">Bienvenido a La Fonoteca</h1>
@@ -48,7 +47,6 @@
             
         </section>
     </main>
-      <SectionFooter />
     </div>
   </template>
   

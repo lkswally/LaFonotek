@@ -1,8 +1,6 @@
 <template>
-<SectionHeader />
 <main>
     <div>
-        <SectionHeader />
         <section id="inicio_catalogo">
             <h1 class="animacion">Ultimos Lanzamientos</h1>
         </section>
@@ -15,10 +13,8 @@
                     <button class="boton-item">Agregar al Carrito</button> </div>
                 </div>
         </section>
-        <SectionFooter />
     </div>
 </main>
-<SectionFooter />
 </template>
   
   <script>

@@ -1,10 +1,8 @@
 <template>
     <div>
-      <SectionHeader />
       <main>
         <div id="construccion">En construccion!</div>
       </main>
-      <SectionFooter />
     </div>
   </template>
   
