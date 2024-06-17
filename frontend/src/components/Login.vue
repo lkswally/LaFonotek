@@ -15,7 +15,7 @@
                             <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" v-model="password" required>
                         </div>
                         <!-- <input type="button" value="Iniciar Sesión!" @click="submitLogin"> -->
-                        <button type="submit" @click="submitLogin">Iniciar Sesión!</button>
+                        <button type="submit">Iniciar Sesión!</button>
                     </form>
                 </div>
             <div class="form-image">
@@ -51,10 +51,7 @@
                 this.$router.push('/perfil');
             })
             .catch(error => {
-                console.log('Entrando a catch error');
-                // Manejo de errores
-                console.error('Error en el login:', error.response.data);
-                // Puedes mostrar un mensaje de error al usuario en la interfaz.
+                console.error('Hay un error en el login:', error.response.data);
             });
         }
     }

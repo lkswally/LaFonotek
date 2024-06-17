@@ -1,7 +1,6 @@
 //const Disco = require('../models/disco');
-const db = require('../models'); // Asegúrate de importar el objeto db desde models/index.js
+const db = require('../models'); 
 
-// Obtener todos los discos
 exports.obtenerDiscos = async (req, res) => {
   try {
     const discos = await db.Disco.findAll({

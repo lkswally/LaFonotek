@@ -15,11 +15,16 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Genero.init({
-    idGenero: DataTypes.INTEGER,
+    idGenero: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
+    },
     tipo: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Genero',
+    timestamps: false
   });
   return Genero;
 };

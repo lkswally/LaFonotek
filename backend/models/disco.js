@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Disco',
+    timestamps: false
   });
 
   return Disco; // Exporta la clase Disco directamente
