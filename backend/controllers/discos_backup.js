@@ -1,20 +1,9 @@
-const { Disco } = require('../models');
-
-const multer = require('multer');
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'uploads/'); // Carpeta donde se guardarán las imágenes
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' + file.originalname); // Nombre único para la imagen
-  }
-});
-const upload = multer({ storage: storage });
-
+//const { Disco } = require('../models');
+const db = require('../models'); 
 
 exports.obtenerDiscos = async (req, res) => {
   try {
-    const discos = await Disco.findAll({
+    const discos = await db.Disco.findAll({
       attributes: ['idDisco', 'nombre', 'precio', 'artista', 'anioLanzamiento', 'GeneroIdGenero', 'imagen'] 
     }); // todos los discos de la base de datos
     res.json(discos); // discos en formato JSON
@@ -24,31 +13,12 @@ exports.obtenerDiscos = async (req, res) => {
   }
 };
 
-exports.obtenerDiscoPorId = async (req, res) => {
+exports.editarDisco = async (req, res) => {
   const { id } = req.params;
+  const { nombre, artista, genero, anio, precio, stock, imagen } = req.body;
 
   try {
-    const disco = await Disco.findByPk(id);
-
-    if (!disco) {
-      return res.status(404).json({ error: 'Disco no encontrado' });
-    }
-
-    res.json(disco);
-  } catch (error) {
-    console.error('Error al obtener el disco:', error);
-    res.status(500).json({ error: 'Error en el servidor' });
-  }
-};
-
-exports.editarDisco = [
-  upload.single("imagen"),
-  async (req, res) => {
-  const { id } = req.params;
-  const { nombre, artista, genero, anio, precio, stock } = req.body;
-
-  try {
-    const disco = await Disco.findByPk(id);
+    const disco = await db.Disco.findByPk(id);
     if (!disco) {
       return res.status(404).json({ error: 'Disco no encontrado' });
     }
@@ -56,15 +26,11 @@ exports.editarDisco = [
     // Actualizar los campos del disco
     disco.nombre = nombre;
     disco.artista = artista;
-    disco.genero = genero;
+    disco.genero = genero; // Asegúrate de tener estos campos en tu modelo
     disco.anioLanzamiento = anio;
     disco.precio = precio;
     disco.stock = stock;
-
-    // Actualizar la imagen solo si se seleccionó un nuevo archivo
-    if (req.file) {
-      disco.imagen = req.file.filename;
-    }
+    disco.imagen = imagen;
 
     await disco.save();
 
@@ -73,13 +39,13 @@ exports.editarDisco = [
     console.error(error);
     res.status(500).json({ error: 'Error al actualizar el disco' });
   }
-}];
+};
 
 exports.eliminarDisco = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const disco = await Disco.findByPk(id);
+    const disco = await db.Disco.findByPk(id);
     if (!disco) {
       return res.status(404).json({ error: 'Disco no encontrado' });
     }

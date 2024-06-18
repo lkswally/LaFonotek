@@ -18,6 +18,15 @@ exports.login = async (req, res) => {
       return res.status(401).json({ error: 'Contraseña incorrecta' });
     }
 
+    // Almacenar datos del usuario en la sesión
+    req.session.usuario = {
+      idUsuario: usuario.idUsuario,
+      nombre: usuario.nombre,
+      apellido: usuario.apellido,
+      email: usuario.email,
+      isStaff: usuario.isStaff
+    };
+
     res.json({ 
       message: 'Login exitoso',
       usuario,

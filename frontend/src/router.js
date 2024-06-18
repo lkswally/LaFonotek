@@ -6,6 +6,7 @@ import ContactoView from './views/ContactoView.vue';
 import ConstructionView from './views/ConstructionView.vue';
 import Login from './components/Login.vue';
 import Signup from './components/Signup.vue';
+import EditarDisco from './components/EditarDisco.vue'
 
 const BASE_URL = process.env.VITE_BASE_URL || '/'; // Valor por defecto '/' en desarrollo
 
@@ -18,7 +19,13 @@ const router = createRouter({
     { path: '/contacto', name: 'contacto', component: ContactoView },
     { path: '/construccion', name: 'construccion', component: ConstructionView },
     { path: '/login', name: 'login', component: Login},
-    { path: '/signup', name: 'signup', component: Signup}
+    { path: '/signup', name: 'signup', component: Signup},
+    { 
+      path: '/editardisco/:id',
+      name: 'EditarDisco',
+      component: EditarDisco,
+      props: true  // Pasa los parámetros de la ruta
+    },
   ]
 });
 
