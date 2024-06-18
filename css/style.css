@@ -454,16 +454,6 @@ a {
 
 #slash img {
   left: 25%;
-  -webkit-transition: all .8s ease;
-  -moz-transition: all .8s ease;
-  -o-transition: all .8s ease;
-  transition: all .8s ease;
-}
-
-#slash:hover img {
-  background:none;
-	opacity: 0.5;
-  z-index: 0;
 }
 
 #buscar_eventos{
@@ -853,10 +843,6 @@ footer .footer_datos .datos li a {
 
 footer .footer_datos .datos li :hover {
   color: #a8a1a5;
-}
-
-footer .redes {
-  padding-top: 10px;
 }
 
 footer .redes a :hover {
@@ -1331,10 +1317,6 @@ footer .redes a :hover {
   .titulo_footer a{
     display: none;
   }
-
-  footer .titulo_footer {
-    padding-top: 10px;
-  } 
 }
 
 @media screen and (max-width:456px) and (min-width:426px){
@@ -1383,7 +1365,6 @@ footer .redes a :hover {
 
   .redes a img {
     width: 18%;
-    padding-top: 10px;
   }
 
   .footer_datos li a {
