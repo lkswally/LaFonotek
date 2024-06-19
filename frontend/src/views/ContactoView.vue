@@ -61,7 +61,7 @@
                 </form>
             </div>
             <div class="form-image">
-                <img src="assets/form_side.png" alt="Formulario de contacto">
+                <img src="../assets/form_side.png" alt="Formulario de contacto">
             </div>
           </div>
             <div id="popup" class="popup" style="display: none;">

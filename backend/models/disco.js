@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
   Disco.init({
     idDisco: {
       type: DataTypes.INTEGER,
-      primaryKey: true // Indica que esta es la clave primaria
+      primaryKey: true 
     },
     nombre: DataTypes.STRING,
     precio: DataTypes.DECIMAL,
@@ -25,5 +25,5 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: false
   });
 
-  return Disco; // Exporta la clase Disco directamente
+  return Disco;
 };

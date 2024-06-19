@@ -53,7 +53,7 @@ exports.editarDisco = [
       return res.status(404).json({ error: 'Disco no encontrado' });
     }
 
-    // Actualizar los campos del disco
+    // Acá actualizo los campos del form
     disco.nombre = nombre;
     disco.artista = artista;
     disco.genero = genero;
@@ -61,7 +61,7 @@ exports.editarDisco = [
     disco.precio = precio;
     disco.stock = stock;
 
-    // Actualizar la imagen solo si se seleccionó un nuevo archivo
+    // y actualizo la imágen si se seleccionó un archivo
     if (req.file) {
       disco.imagen = req.file.filename;
     }

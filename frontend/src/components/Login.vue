@@ -17,7 +17,7 @@
                     </form>
                 </div>
             <div class="form-image">
-                <img src="assets/form_side.png" alt="Formulario de login"> 
+                <img src="../assets/settings.png" alt="Formulario de login"> 
             </div>
             </div>
         </main>
@@ -45,6 +45,7 @@
             .then(response => {
                 // Login exitoso
                 console.log('Login exitoso:', response.data);
+                this.emitter.emit('loginExitoso', response.data.usuario); // <-- evento para forzar el refresh
 
                 Swal.fire({
                     icon: 'success',

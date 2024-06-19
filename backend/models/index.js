@@ -6,7 +6,6 @@ const env = process.env.NODE_ENV || 'development';
 const { sequelize, config } = require(__dirname + '/../config/db.js');
 const db = {};
 
-// Carga automática de modelos (Sequelize 6+)
 const modelFiles = fs
   .readdirSync(__dirname)
   .filter(file => 
@@ -21,7 +20,7 @@ for (const file of modelFiles) {
   db[model.name] = model;
 }
 
-// Inicializa las asociaciones automáticamente
+// se inicializan asociaciones...
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
     db[modelName].associate(db);
