@@ -10,6 +10,9 @@
               <li><router-link to="/catalogo">Catálogo</router-link></li>
               <li><router-link to="/eventos">Eventos</router-link></li>
               <li><router-link to="/contacto">Contacto</router-link></li>
+              <li v-if="usuarioLogueado && usuarioLogueado.isStaff" class="li-desplegable">
+                <router-link to="/agregar-disco">Agregar Disco</router-link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -35,7 +38,9 @@
               <li><router-link to="/catalogo">Catálogo</router-link></li>
               <li><router-link to="/eventos">Eventos</router-link></li>
               <li><router-link to="/contacto">Contacto</router-link></li>
-              <li v-if="usuarioLogueado" class="li-desplegable"><router-link to="/">Perfil</router-link></li>
+              <li v-if="usuarioLogueado && usuarioLogueado.isStaff" class="li-desplegable">
+                <router-link to="/agregar-disco">Agregar Disco</router-link>
+              </li>
               <li v-else class="li-desplegable"><router-link to="/login">Login</router-link></li>
               <li v-else class="li-desplegable"><router-link to="/signup">Sign Up</router-link></li>
             </ol>
@@ -45,6 +50,7 @@
     </div>
   </header>
 </template>
+
 
 <script>
 

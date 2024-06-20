@@ -20,7 +20,7 @@ for (const file of modelFiles) {
   db[model.name] = model;
 }
 
-// se inicializan asociaciones...
+// acá se inicializan asociaciones...
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
     db[modelName].associate(db);

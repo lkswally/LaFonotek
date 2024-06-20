@@ -1,16 +1,5 @@
 const { Disco } = require('../models');
-
-const multer = require('multer');
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, 'uploads/'); // Carpeta donde se guardarán las imágenes
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' + file.originalname); // Nombre único para la imagen
-  }
-});
-const upload = multer({ storage: storage });
-
+const upload = require('../config/multerConfig')
 
 exports.obtenerDiscos = async (req, res) => {
   try {
@@ -92,4 +81,31 @@ exports.eliminarDisco = async (req, res) => {
     res.status(500).json({ error: 'Error al eliminar el disco' });
   }
 };
+
+exports.crearDisco = [
+  upload.single("imagen"),
+  async (req, res) => {
+    const { nombre, artista, genero, anio, precio, stock } = req.body;
+    console.log(req.body);
+
+    try {
+      // acá creo el disco
+      const nuevoDisco = await Disco.create({
+        nombre,
+        artista,
+        GeneroIdGenero: genero,
+        anioLanzamiento: anio,
+        precio,
+        stock,
+        imagen: req.file ? req.file.filename : null // si se subió imagen, guardo nombre, si no... null
+      });
+
+      res.status(201).json({ message: 'Disco creado exitosamente', disco: nuevoDisco });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Error al crear el disco' });
+    }
+  }
+];
+
 

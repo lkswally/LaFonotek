@@ -1,18 +1,28 @@
 const express = require('express');
 const router = express.Router();
-const discosController = require('../controllers/discos');
+const upload = require('../config/multerConfig')
 // const authMiddleware = require('../middlewares/authMiddleware'); // Middleware que no puedo hacer funcionar
 
+const { 
+    obtenerDiscos, 
+    obtenerDiscoPorId, 
+    editarDisco, 
+    eliminarDisco, 
+    crearDisco 
+} = require('../controllers/discos');
+
 //para obtener discos
-router.get('/', discosController.obtenerDiscos);
-router.get('/:id', discosController.obtenerDiscoPorId); 
+router.get('/', obtenerDiscos);
+router.get('/:id', obtenerDiscoPorId); 
 
 //para editar un disco
-router.put('/:id', discosController.editarDisco);
+router.put('/:id', editarDisco);
 
 //para eliminar un disco
-router.delete('/:id', discosController.eliminarDisco);
+router.delete('/:id', eliminarDisco);
 
+//para crear
+router.post('/', crearDisco);
 
 
 module.exports = router;

@@ -20,10 +20,10 @@
 
 <script>
 export default {
-// Lógica del componente
+
 };
 </script>
 
 <style scoped>
-/* Estilos del componente */
+
 </style>
