@@ -93,5 +93,8 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.li-desplegable{
+  color: red;
+}
 </style>
 

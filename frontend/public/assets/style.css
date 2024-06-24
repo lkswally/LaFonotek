@@ -62,15 +62,12 @@ header .menu .lista nav ul li .active {
   font-weight:bolder;
 }
 
-header .menu .boton {
-  margin-top: 35px;
-}
-
 header .menu .boton a {
   background: #0b5850;
   color: #d2c8ce;
   padding: 10px 20px;
   border-radius: 5px;
+  margin-left: 5px;
 }
 
 header .menu .boton :hover {
@@ -375,7 +372,7 @@ a {
 }
 
 .contenedor2 .contenedor-items .item{
- max-width: 200px;
+ max-width: 250px;
  margin: auto;
  border: 1px solid #666;
  border-radius: 10px;
@@ -395,8 +392,8 @@ a {
  display: block;
  font-weight: bold;
  text-align: center;
- text-transform: uppercase;
  color: #0b5850;
+ padding-bottom: 10px;
 }
 
 .contenedor2 .contenedor-items .item .precio-item{
@@ -409,9 +406,9 @@ a {
 
 .contenedor2 .contenedor-items .item .boton-item{
  display: block;
- margin: 10px auto;
+ margin: 10px 0;
  border: none;
- background-color: black;
+ background-color:#0b5850;
  color: #fff;
  padding: 5px 15px;
  border-radius: 5px;
@@ -701,6 +698,7 @@ p {
 
 #main_contacto {
   padding: 100px 0;
+  height: 82vh;
 }
  
 .container {
