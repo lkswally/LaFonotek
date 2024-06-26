@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "./frontend/public/index.html",
-            "use": "@vercel/node"
+            "use": "@vercel/Vue"
         }
     ],
     "routes": [
