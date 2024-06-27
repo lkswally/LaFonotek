@@ -344,6 +344,11 @@ a {
   justify-content: center;
 }
 
+#inicio_catalogo2 {
+  height: 60vh;
+  background: url(Memebresías.jpg) center no-repeat ;
+}
+
 #titulo_catalogo {
   text-transform: uppercase;
   font-size: 3rem;
@@ -358,6 +363,8 @@ a {
  margin: auto;
 }
 
+
+
 /* SECCION CONTENEDOR DE ITEMS */
 
 .contenedor2 .contenedor-items{
@@ -371,6 +378,16 @@ a {
  transition: .3s;
 }
 
+.contenedor2 .contenedor-items{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap:30px;
+  grid-row-gap: 30px;
+  /* width: 60%; */
+  width: 100%;
+  transition: .3s;
+ }
 .contenedor2 .contenedor-items .item{
  max-width: 250px;
  margin: auto;

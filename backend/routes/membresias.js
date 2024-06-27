@@ -3,9 +3,6 @@ const router = express.Router();
 const upload = require('../config/multerConfig')
 const membresiasController = require('../controllers/membresias');
 
-const { 
-    obtenerMembresias, 
-} = require('../controllers/membresias');
+router.get('/', membresiasController.obtenerMembresia);
 
-//para obtener membresias
-router.get('/', membresiasController.obtenerMembresia); 
+module.exports = router;

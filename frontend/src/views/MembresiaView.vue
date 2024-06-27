@@ -1,17 +1,14 @@
 <template>
     <main>
     <div>
-      <section id="inicio_catalogo">
-        <h1 class="animacion">Ultimos Lanzamientos</h1>
+      <section id="inicio_catalogo2">
+
       </section>
       <section class="contenedor2">
         <div class="contenedor-items">
           <div v-for="membresia in membresias" :key="membresia.idMembresia" class="item">
             <span class="titulo-item">{{ membresia.tipo }}</span>
             <img :src="`http://localhost:3000/uploads/${membresia.imagen}`" alt="" class="img-item"> 
-          
-
-
           </div>
         </div>
       </section>
