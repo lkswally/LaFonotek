@@ -37,11 +37,13 @@ const connection = require('./config/db'); // Conexión a la base de datos
 const discosRoutes = require('./routes/discos');
 const generosRoutes = require('./routes/generos');
 const usuariosRoutes = require('./routes/usuarios');
+const membresiaRoutes = require('./routes/membresias');
 const authRoutes = require('./routes/auth');
 
 app.use('/discos', discosRoutes);
 app.use('/generos', generosRoutes);
 app.use('/usuarios', usuariosRoutes); // Mantenemos usuarios para autenticación (opcional)
+app.use('/membresias', membresiaRoutes);
 app.use('/', authRoutes);
 app.use('/uploads', express.static('uploads'));
 

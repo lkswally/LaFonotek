@@ -13,6 +13,7 @@
     "mitt": "^3.0.1",
     "sweetalert2": "^11.11.1",
     "vue": "^3.3.4",
+    "vue-cli-service": "^5.0.10",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {

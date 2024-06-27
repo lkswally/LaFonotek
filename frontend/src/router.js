@@ -3,6 +3,7 @@ import HomeView from './views/HomeView.vue';
 import CatalogoView from './views/CatalogoView.vue';
 import EventosView from './views/EventosView.vue';
 import ContactoView from './views/ContactoView.vue';
+import MembresiaView from './views/MembresiaView.vue';
 import ConstructionView from './views/ConstructionView.vue';
 import Login from './components/Login.vue';
 import Signup from './components/Signup.vue';
@@ -18,6 +19,7 @@ const router = createRouter({
     { path: '/catalogo', name: 'catalogo', component: CatalogoView },
     { path: '/eventos', name: 'eventos', component: EventosView },
     { path: '/contacto', name: 'contacto', component: ContactoView },
+    { path: '/membresia', name: 'membresia', component: MembresiaView },
     { path: '/construccion', name: 'construccion', component: ConstructionView },
     { path: '/login', name: 'login', component: Login},
     { path: '/signup', name: 'signup', component: Signup},

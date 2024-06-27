@@ -13,6 +13,7 @@
               <li v-if="usuarioLogueado && usuarioLogueado.isStaff" class="li-desplegable">
                 <router-link to="/agregar-disco">Agregar Disco</router-link>
               </li>
+              <li><router-link to="/membresia">Membresia</router-link></li>
             </ul>
           </nav>
         </div>

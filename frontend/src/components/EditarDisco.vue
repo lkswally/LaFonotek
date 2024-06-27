@@ -36,7 +36,7 @@
             </form>
             <div v-else>
               <p>Cargando datos del disco...</p> 
-              </div>
+            </div>
           </div>
           <div class="form-image">
             <img src="../assets/settings.png" alt="Formulario de edición">
@@ -118,6 +118,27 @@ export default {
   }
 };
 </script>
+
+<style>
+.boton-editar{
+  margin: 10px auto;
+  border: none;
+  background-color: #0b5850;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton-eliminar{
+  margin: 10px 2px;
+  border: none;
+  background-color: #0b5850;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
 
   
   

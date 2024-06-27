@@ -13,7 +13,7 @@
                             <label for="password">Contraseña:</label>
                             <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" v-model="password" required>
                         </div>
-                        <button type="submit">Iniciar Sesión!</button>
+                        <button class="click" type="submit">Iniciar Sesión</button>
                     </form>
                 </div>
             <div class="form-image">
@@ -70,3 +70,19 @@
     }
   };
   </script>
+  <style>
+  .click{
+    margin: 10px auto;
+    border: none;
+    background-color: #0b5850;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .click:hover {
+  background-color:#26ab9e;
+  color: black;
+  transition: 0.5s;
+  }
+  </style>

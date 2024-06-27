@@ -21,7 +21,7 @@
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" v-model="password" required>
               </div>
-              <button type="submit">Registrarse</button>
+              <button class="click" type="submit">Registrarse</button>
             </form>
           </div>
           <div class="form-image">
